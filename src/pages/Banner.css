@@ -1,0 +1,42 @@
+/* Default banner styling for mobile (phone) */
+.banner {
+    background-image: url('../assets/img/banner-mobile.jpg'); /* Mobile banner */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Tablet view (for screens wider than 768px but smaller than 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+      background-image: url('../assets/img/banner-tablette.jpg'); /* Tablet banner */
+    }
+  }
+  
+  /* Desktop view (for screens wider than 1024px) */
+  @media (min-width: 1024px) {
+    .banner {
+      background-image: url('../assets/img/banner.jpg'); /* Desktop banner */
+    }
+  }
+  
+  .banner {
+    width: 100%; /* Modifica da 100vw a 100% per evitare overflow */
+    height: 250px; /* Altezza fissa */
+    background-image: url('../assets/img/banner.jpg');
+    background-size: cover; /* Assicura che l'immagine copra tutta l'area disponibile */
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto; /* Rimuove i margini laterali */
+    padding: 0; /* Rimuove il padding */
+    overflow: hidden; /* Evita l'overflow */
+    box-sizing: border-box; /* Include padding e bordi nelle dimensioni */
+}
+
+.container {
+    max-width: 1200px; /* Larghezza massima del contenitore */
+    margin: 0 auto; /* Allinea il contenitore al centro */
+    padding: 0 20px; /* Piccolo padding laterale */
+    box-sizing: border-box; /* Assicurati che il padding sia incluso nel calcolo delle dimensioni */
+}
+
